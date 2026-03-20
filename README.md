@@ -1,6 +1,6 @@
 # Shelf Life
 
-Your reading life, visualized. Drop a Goodreads CSV export, get a beautiful, scrollable portrait of your reading history. Runs entirely in the browser — your data never leaves your machine.
+Your reading life, visualized. Drop a Goodreads CSV export, get a beautiful, scrollable portrait of your reading history. Runs entirely in the browser.
 
 ## What it does
 
@@ -22,9 +22,9 @@ Shelf Life parses your Goodreads library export and generates a narrative "readi
 3. Drag and drop the CSV file (or click to browse)
 4. Scroll through your portrait
 
-## Privacy
+## Operation
 
-Everything runs client-side in your browser. The CSV is parsed with JavaScript locally. No data is uploaded, no accounts needed, no analytics. The site works offline once loaded.
+Everything runs client-side in your browser. The CSV is parsed with JavaScript locally. The site works offline once loaded.
 
 ## Sharing your portrait
 
