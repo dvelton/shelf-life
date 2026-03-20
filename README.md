@@ -30,9 +30,11 @@ Everything runs client-side in your browser. The CSV is parsed with JavaScript l
 
 Each chapter of your portrait has a download button that saves it as a PNG — sized for sharing on social media or dropping into a group chat.
 
-If you have a GitHub account, you can publish your full portrait to your own GitHub Pages site with one click. The app uses GitHub's Device Flow to authenticate (no server, no secrets), creates a `shelf-life` repo under your account, and deploys the static site. You end up with a permanent URL at `yourusername.github.io/shelf-life`.
+At the end of the portrait there's a "Publish to GitHub" section with two options:
 
-There's also a profile README widget — a generated SVG card showing your currently reading list, recent books, and key stats. Paste it into your GitHub profile README. An optional GitHub Action template keeps it up to date by polling your Goodreads RSS feed on a schedule.
+1. **Download your portrait as a standalone HTML file.** Upload it to any GitHub repo, enable Pages in the repo settings, and you've got a permanent URL at `yourusername.github.io/shelf-life`. Instructions are included in the app.
+
+2. **Copy a markdown snippet for your GitHub profile README.** A pre-formatted stats table you can paste into your profile repo's README to show your reading stats alongside your code contributions.
 
 ## Tech stack
 
