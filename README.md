@@ -26,13 +26,13 @@ Shelf Life parses your Goodreads library export and generates a narrative "readi
 
 Everything runs client-side in your browser. The CSV is parsed with JavaScript locally. No data is uploaded, no accounts needed, no analytics. The site works offline once loaded.
 
-## Data handling
+## Sharing your portrait
 
-Goodreads CSV exports are inconsistent. The app handles common gaps:
+Each chapter of your portrait has a download button that saves it as a PNG — sized for sharing on social media or dropping into a group chat.
 
-- **Missing ISBNs** — ~65% of real exports lack ISBN data. Book covers (via Open Library) are shown when available and gracefully omitted when not.
-- **Missing read dates** — Many books lack a "Date Read." Timeline visualizations note the coverage and use "Date Added" as a fallback for year range calculations.
-- **No TBR books** — If all your books are on the "read" shelf, the Mount TBR chapter shows a clean message instead of empty charts.
+If you have a GitHub account, you can publish your full portrait to your own GitHub Pages site with one click. The app uses GitHub's Device Flow to authenticate (no server, no secrets), creates a `shelf-life` repo under your account, and deploys the static site. You end up with a permanent URL at `yourusername.github.io/shelf-life`.
+
+There's also a profile README widget — a generated SVG card showing your currently reading list, recent books, and key stats. Paste it into your GitHub profile README. An optional GitHub Action template keeps it up to date by polling your Goodreads RSS feed on a schedule.
 
 ## Tech stack
 
