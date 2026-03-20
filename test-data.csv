@@ -1,0 +1,39 @@
+Book Id,Title,Author,Author l-f,Additional Authors,ISBN,ISBN13,My Rating,Average Rating,Publisher,Binding,Number of Pages,Year Published,Original Publication Year,Date Read,Date Added,Bookshelves,Bookshelves with positions,Exclusive Shelf,My Review,Spoiler,Private Notes,Read Count,Owned Copies
+1,The Great Gatsby,F. Scott Fitzgerald,"Fitzgerald, F. Scott",,="0743273567",="9780743273565",5,3.93,Scribner,Paperback,180,2004,1925,2023/04/15,2023/01/10,classics,classics (#1),read,,,,1,0
+2,1984,George Orwell,"Orwell, George",,="0451524934",="9780451524935",5,4.19,Signet Classic,Mass Market Paperback,328,1961,1949,2023/06/20,2023/02/14,classics,classics (#2),read,,,,1,0
+3,Dune,Frank Herbert,"Herbert, Frank",,="0441013597",="9780441013593",4,4.25,Ace Books,Paperback,688,2005,1965,2023/08/01,2023/05/10,sci-fi,sci-fi (#1),read,,,,1,0
+4,Project Hail Mary,Andy Weir,"Weir, Andy",,="0593135202",="9780593135204",5,4.52,Ballantine Books,Hardcover,496,2021,2021,2023/09/15,2023/07/01,sci-fi,sci-fi (#1),read,,,,1,0
+5,The Hitchhiker's Guide to the Galaxy,Douglas Adams,"Adams, Douglas",,="0345391802",="9780345391803",4,4.22,Del Rey,Mass Market Paperback,216,1995,1979,2023/11/01,2023/09/20,sci-fi humor,sci-fi (#2),read,,,,1,0
+6,Sapiens,Yuval Noah Harari,"Harari, Yuval Noah",,="0062316117",="9780062316110",3,4.36,Harper Perennial,Paperback,443,2015,2011,2024/01/10,2023/10/15,nonfiction,nonfiction (#1),read,,,,1,0
+7,The Martian,Andy Weir,"Weir, Andy",,="0553418025",="9780553418026",5,4.40,Broadway Books,Paperback,369,2014,2011,2024/02/20,2024/01/05,sci-fi,sci-fi (#3),read,,,,1,0
+8,Educated,Tara Westover,"Westover, Tara",,="0399590501",="9780399590504",4,4.47,Random House,Hardcover,334,2018,2018,2024/03/15,2024/02/01,memoir,memoir (#1),read,,,,1,0
+9,The Name of the Wind,Patrick Rothfuss,"Rothfuss, Patrick",,="0756404746",="9780756404741",5,4.55,DAW Books,Paperback,662,2007,2007,2024/05/01,2024/03/10,fantasy,fantasy (#1),read,,,,1,0
+10,Circe,Madeline Miller,"Miller, Madeline",,="0316556343",="9780316556347",4,4.27,Back Bay Books,Paperback,400,2019,2018,2024/06/10,2024/04/15,fantasy mythology,fantasy (#2),read,,,,1,0
+11,Klara and the Sun,Kazuo Ishiguro,"Ishiguro, Kazuo",,="059331817X",="9780593318171",3,3.82,Vintage,Paperback,320,2021,2021,2024/07/20,2024/06/01,literary fiction,literary fiction (#1),read,,,,1,0
+12,The Song of Achilles,Madeline Miller,"Miller, Madeline",,="0062060627",="9780062060624",5,4.36,Ecco,Paperback,378,2012,2011,2024/08/15,2024/07/01,fantasy mythology,fantasy (#3),read,,,,1,0
+13,Piranesi,Susanna Clarke,"Clarke, Susanna",,="1635575168",="9781635575163",4,4.25,Bloomsbury Publishing,Paperback,272,2020,2020,2024/09/10,2024/08/01,fantasy,fantasy (#4),read,,,,1,0
+14,Children of Time,Adrian Tchaikovsky,"Tchaikovsky, Adrian",,="1447273303",="9781447273301",5,4.29,Pan Books,Paperback,600,2016,2015,2024/10/15,2024/09/01,sci-fi,sci-fi (#4),read,,,,1,0
+15,Thinking Fast and Slow,Daniel Kahneman,"Kahneman, Daniel",,="0374533555",="9780374533557",3,4.18,Farrar Straus and Giroux,Paperback,499,2013,2011,2024/11/20,2024/10/01,nonfiction,nonfiction (#2),read,,,,1,0
+16,The Left Hand of Darkness,Ursula K. Le Guin,"Le Guin, Ursula K.",,="0441478123",="9780441478125",4,4.08,Ace Books,Mass Market Paperback,304,1987,1969,2025/01/05,2024/11/15,sci-fi,sci-fi (#5),read,,,,1,0
+17,Babel,R.F. Kuang,"Kuang, R.F.",,="0063021420",="9780063021426",4,4.13,Harper Voyager,Hardcover,560,2022,2022,2025/02/10,2025/01/01,fantasy,fantasy (#5),read,,,,1,0
+18,Tomorrow and Tomorrow and Tomorrow,Gabrielle Zevin,"Zevin, Gabrielle",,="0593321200",="9780593321201",4,4.18,Knopf,Hardcover,416,2022,2022,2025/03/01,2025/01/15,literary fiction,literary fiction (#2),read,,,,1,0
+19,Flowers for Algernon,Daniel Keyes,"Keyes, Daniel",,="0156030306",="9780156030304",5,4.20,Mariner Books,Paperback,311,2004,1966,2022/05/10,2022/03/01,classics sci-fi,classics (#3),read,,,,1,0
+20,Slaughterhouse-Five,Kurt Vonnegut,"Vonnegut, Kurt",,="0440180295",="9780440180296",4,4.09,Dell,Mass Market Paperback,275,1991,1969,2022/08/20,2022/06/15,classics,classics (#4),read,,,,1,0
+21,Artemis,Andy Weir,"Weir, Andy",,="0553448129",="9780553448122",3,3.67,Ballantine Books,Paperback,320,2018,2017,2022/11/01,2022/09/10,sci-fi,sci-fi (#6),read,,,,1,0
+22,The Three-Body Problem,Cixin Liu,"Liu, Cixin",,="0765382032",="9780765382030",4,4.06,Tor Books,Paperback,400,2014,2006,2022/02/15,2021/12/01,sci-fi,sci-fi (#7),read,,,,1,0
+23,Normal People,Sally Rooney,"Rooney, Sally",,="1984822187",="9781984822185",3,3.85,Hogarth,Paperback,273,2020,2018,2021/06/15,2021/04/01,literary fiction,literary fiction (#3),read,,,,1,0
+24,Foundation,Isaac Asimov,"Asimov, Isaac",,="0553293354",="9780553293357",4,4.17,Spectra,Mass Market Paperback,244,1991,1951,2021/09/10,2021/07/01,sci-fi classics,sci-fi (#8),read,,,,1,0
+25,The Remains of the Day,Kazuo Ishiguro,"Ishiguro, Kazuo",,="0679731725",="9780679731726",5,4.15,Vintage,Paperback,245,1990,1989,2021/12/05,2021/10/15,literary fiction,literary fiction (#4),read,,,,1,0
+30,The Wind-Up Bird Chronicle,Haruki Murakami,"Murakami, Haruki",,,,0,4.16,,,607,1997,1994,,2025/03/01,,,to-read,,,,0,0
+31,Blood Meridian,Cormac McCarthy,"McCarthy, Cormac",,,,0,4.17,,,351,1992,1985,,2024/06/01,,,to-read,,,,0,0
+32,Neuromancer,William Gibson,"Gibson, William",,,,0,3.89,,,271,2000,1984,,2024/01/15,,,to-read,,,,0,0
+33,Hyperion,Dan Simmons,"Simmons, Dan",,,,0,4.24,,,482,1995,1989,,2023/08/20,,,to-read,,,,0,0
+34,The Master and Margarita,Mikhail Bulgakov,"Bulgakov, Mikhail",,,,0,4.31,,,384,1996,1966,,2023/05/10,,,to-read,,,,0,0
+35,House of Leaves,Mark Z. Danielewski,"Danielewski, Mark Z.",,,,0,4.14,,,709,2000,2000,,2023/02/28,,,to-read,,,,0,0
+36,Station Eleven,Emily St. John Mandel,"Mandel, Emily St. John",,,,0,4.04,,,333,2014,2014,,2022/11/01,,,to-read,,,,0,0
+37,Pale Fire,Vladimir Nabokov,"Nabokov, Vladimir",,,,0,4.20,,,246,1989,1962,,2022/07/15,,,to-read,,,,0,0
+38,The Dispossessed,Ursula K. Le Guin,"Le Guin, Ursula K.",,,,0,4.22,,,387,2003,1974,,2022/04/01,,,to-read,,,,0,0
+39,Cloud Atlas,David Mitchell,"Mitchell, David",,,,0,3.99,,,509,2004,2004,,2021/12/20,,,to-read,,,,0,0
+40,Beloved,Toni Morrison,"Morrison, Toni",,,,0,3.96,,,321,2004,1987,,2021/09/15,,,to-read,,,,0,0
+41,Middlemarch,George Eliot,"Eliot, George",,,,0,4.02,,,880,2003,1871,,2021/06/01,,,to-read,,,,0,0
+42,The Count of Monte Cristo,Alexandre Dumas,"Dumas, Alexandre",,,,0,4.27,,,1276,2003,1844,,2021/03/10,,,to-read,,,,0,0

@@ -1,0 +1,49 @@
+<script>
+  import { onMount } from 'svelte';
+  import BigPicture from './chapters/BigPicture.svelte';
+  import Timeline from './chapters/Timeline.svelte';
+  import Taste from './chapters/Taste.svelte';
+  import Authors from './chapters/Authors.svelte';
+  import PageCounts from './chapters/PageCounts.svelte';
+  import Ages from './chapters/Ages.svelte';
+  import MountTbr from './chapters/MountTbr.svelte';
+  import Personality from './chapters/Personality.svelte';
+
+  let { data } = $props();
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll('.chapter').forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  });
+</script>
+
+<div class="portrait">
+  <BigPicture stats={data.stats} />
+  <Timeline stats={data.stats} />
+  <Taste stats={data.stats} />
+  <Authors stats={data.stats} />
+  <PageCounts stats={data.stats} />
+  <Ages stats={data.stats} read={data.read} />
+  <MountTbr stats={data.stats} tbr={data.tbr} />
+  <Personality stats={data.stats} read={data.read} />
+</div>
+
+<style>
+  .portrait {
+    padding-bottom: 4rem;
+  }
+</style>
