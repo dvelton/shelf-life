@@ -52,7 +52,7 @@
     if (topAuthor) {
       lines.push(`| **Most-read author** | ${topAuthor.name} (${topAuthor.count}) |`);
     }
-    lines.push(``, `*Generated with [Shelf Life](https://dvelton.github.io/shelf-life/)*`);
+    lines.push(``, `*Generated with [Shelf Life](https://github.com/dvelton/shelf-life)*`);
     return lines.join('\n');
   }
 
@@ -113,7 +113,7 @@
   </div>
   ${s.topAuthors.length ? `<h2>Most Read Authors</h2>${topAuthorsHtml}` : ''}
   ${s.hiddenGems.length ? `<h2>Hidden Gems</h2><p style="color:var(--muted);font-size:0.9rem;margin-bottom:0.75rem;">Books I rated well above the crowd</p>${gemsHtml}` : ''}
-  <div class="footer">Generated with <a href="https://dvelton.github.io/shelf-life/">Shelf Life</a></div>
+  <div class="footer">Generated with <a href="https://github.com/dvelton/shelf-life">Shelf Life</a></div>
 </div>
 </body>
 </html>`;
