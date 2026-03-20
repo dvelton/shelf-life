@@ -8,6 +8,8 @@
   import Ages from './chapters/Ages.svelte';
   import MountTbr from './chapters/MountTbr.svelte';
   import Personality from './chapters/Personality.svelte';
+  import SummaryCard from './chapters/SummaryCard.svelte';
+  import PublishGitHub from './chapters/PublishGitHub.svelte';
 
   let { data } = $props();
 
@@ -36,10 +38,12 @@
   <Timeline stats={data.stats} />
   <Taste stats={data.stats} />
   <Authors stats={data.stats} />
-  <PageCounts stats={data.stats} />
+  <PageCounts stats={data.stats} read={data.read} />
   <Ages stats={data.stats} read={data.read} />
   <MountTbr stats={data.stats} tbr={data.tbr} />
   <Personality stats={data.stats} read={data.read} />
+  <SummaryCard {data} />
+  <PublishGitHub {data} />
 </div>
 
 <style>

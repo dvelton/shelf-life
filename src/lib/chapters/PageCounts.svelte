@@ -1,5 +1,7 @@
 <script>
-  let { stats } = $props();
+  import BookCover from '../BookCover.svelte';
+
+  let { stats, read } = $props();
 
   // Build histogram buckets
   const buckets = [];
@@ -24,19 +26,32 @@
       <span class="stat-value">{stats.medianPages}</span>
       <span class="stat-label">Median Pages</span>
     </div>
-    {#if stats.longest}
-      <div class="stat-card">
-        <span class="stat-value">{stats.longest.pages.toLocaleString()}</span>
-        <span class="stat-label">Longest: {stats.longest.title.slice(0, 30)}{stats.longest.title.length > 30 ? '...' : ''}</span>
-      </div>
-    {/if}
-    {#if stats.shortest}
-      <div class="stat-card">
-        <span class="stat-value">{stats.shortest.pages}</span>
-        <span class="stat-label">Shortest: {stats.shortest.title.slice(0, 30)}{stats.shortest.title.length > 30 ? '...' : ''}</span>
-      </div>
-    {/if}
   </div>
+
+  {#if stats.longest || stats.shortest}
+    <div class="extremes">
+      {#if stats.longest}
+        <div class="extreme-book">
+          <BookCover isbn={stats.longest.bestIsbn} title={stats.longest.title} size="large" />
+          <div>
+            <div class="extreme-label">Longest</div>
+            <div class="book-title">{stats.longest.title}</div>
+            <div class="book-author">{stats.longest.author} — {stats.longest.pages.toLocaleString()} pages</div>
+          </div>
+        </div>
+      {/if}
+      {#if stats.shortest}
+        <div class="extreme-book">
+          <BookCover isbn={stats.shortest.bestIsbn} title={stats.shortest.title} size="large" />
+          <div>
+            <div class="extreme-label">Shortest</div>
+            <div class="book-title">{stats.shortest.title}</div>
+            <div class="book-author">{stats.shortest.author} — {stats.shortest.pages} pages</div>
+          </div>
+        </div>
+      {/if}
+    </div>
+  {/if}
 
   {#if buckets.length > 0}
     <h3 class="sub-heading">Page Count Distribution</h3>
@@ -58,6 +73,34 @@
 </section>
 
 <style>
+  .extremes {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  .extreme-book {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
+  .extreme-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.2rem;
+  }
+
   .sub-heading {
     font-family: var(--sans);
     font-weight: 600;

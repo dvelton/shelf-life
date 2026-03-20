@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
+  import BookCover from '../BookCover.svelte';
 
   let { stats } = $props();
   let scatterContainer;
@@ -132,6 +133,7 @@
       <p class="sub">Books you rated much higher than the crowd</p>
       {#each stats.hiddenGems.slice(0, 5) as book}
         <div class="book-item">
+          <BookCover isbn={book.isbn} title={book.title} />
           <div>
             <div class="book-title">{book.title}</div>
             <div class="book-author">{book.author} — You: {book.myRating}★, Avg: {book.avgRating.toFixed(1)}★</div>
@@ -147,6 +149,7 @@
       <p class="sub">Books you rated much lower than the crowd</p>
       {#each stats.againstGrain.slice(0, 5) as book}
         <div class="book-item">
+          <BookCover isbn={book.isbn} title={book.title} />
           <div>
             <div class="book-title">{book.title}</div>
             <div class="book-author">{book.author} — You: {book.myRating}★, Avg: {book.avgRating.toFixed(1)}★</div>

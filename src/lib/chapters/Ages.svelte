@@ -1,4 +1,6 @@
 <script>
+  import BookCover from '../BookCover.svelte';
+
   let { stats, read } = $props();
 
   // Group by decade
@@ -25,17 +27,25 @@
   <h2>Through the Ages</h2>
 
   {#if oldest || newest}
-    <div class="stat-grid">
+    <div class="extremes">
       {#if oldest}
-        <div class="stat-card">
-          <span class="stat-value">{oldest.originalYear || oldest.yearPublished}</span>
-          <span class="stat-label">Oldest: {oldest.title.slice(0, 35)}{oldest.title.length > 35 ? '...' : ''}</span>
+        <div class="extreme-book">
+          <BookCover isbn={oldest.bestIsbn} title={oldest.title} size="large" />
+          <div>
+            <div class="extreme-label">Oldest</div>
+            <div class="book-title">{oldest.title}</div>
+            <div class="book-author">{oldest.author} — {oldest.originalYear || oldest.yearPublished}</div>
+          </div>
         </div>
       {/if}
       {#if newest}
-        <div class="stat-card">
-          <span class="stat-value">{newest.originalYear || newest.yearPublished}</span>
-          <span class="stat-label">Newest: {newest.title.slice(0, 35)}{newest.title.length > 35 ? '...' : ''}</span>
+        <div class="extreme-book">
+          <BookCover isbn={newest.bestIsbn} title={newest.title} size="large" />
+          <div>
+            <div class="extreme-label">Newest</div>
+            <div class="book-title">{newest.title}</div>
+            <div class="book-author">{newest.author} — {newest.originalYear || newest.yearPublished}</div>
+          </div>
         </div>
       {/if}
     </div>
@@ -58,6 +68,34 @@
 </section>
 
 <style>
+  .extremes {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  .extreme-book {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
+  .extreme-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.2rem;
+  }
+
   .sub-heading {
     font-family: var(--sans);
     font-weight: 600;
