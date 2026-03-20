@@ -18,7 +18,7 @@ Shelf Life parses your Goodreads library export and generates a narrative "readi
 ## How to use it
 
 1. Export your Goodreads library at [goodreads.com/review/import](https://www.goodreads.com/review/import) (click "Export Library")
-2. Open the app
+2. Open the [app](dvelton.github.io/shelf-life/)
 3. Drag and drop the CSV file (or click to browse)
 4. Scroll through your portrait
 
@@ -28,7 +28,7 @@ Everything runs client-side in your browser. The CSV is parsed with JavaScript l
 
 ## Sharing your portrait
 
-Each chapter of your portrait has a download button that saves it as a PNG — sized for sharing on social media or dropping into a group chat.
+Each portrait has a download button that saves it as a PNG — sized for sharing on social media or dropping into a group chat.
 
 At the end of the portrait there's a "Publish to GitHub" section with two options:
 
